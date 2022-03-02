@@ -15,8 +15,15 @@ def main():
   print("Imprimiendo super diccionario")
   for key, value in super_dict.items():
     print(f"Clave: {key}, Valor: {value}")
+
+#Recorriendo una lista de diccionarios
+#primero corremos un for sobre la lista aislando cada unos de los diccionarios dentro de la variable dicts
+#Recorreremos cada dict(diccionario) de la manera comun con la se recorren los diccionarios, accediendo a llave, valor por medio de la funcion items()
   print("Imprimiendo superlista")
-  for key in super_list:
-    print(key)
+  for dicts in super_list:
+    for name, value in dicts.items():
+      print(name, value )
+
+
 if __name__ == "__main__":
   main()
